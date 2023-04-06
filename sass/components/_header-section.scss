@@ -1,0 +1,84 @@
+@import "../utils/vars";
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+  &__logo {
+    width: 145px;
+    height: 31px;
+    font-family: "Raleway";
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000;
+    text-decoration: none;
+  }
+  &__logo-word {
+    color: $lightblue-color;
+  }
+}
+.header-list {
+  display: flex;
+  flex-grow: 1;
+  gap: 50px;
+  padding-right: 340px;
+  &__link {
+    position: relative;
+    font-weight: $font-weight;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $black-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__active-link::after {
+    content: "";
+    border: 3px solid $lightblue-color;
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    border-radius: 2px;
+    visibility: visible;
+    left: 0;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover,
+  &__link:focus {
+    fill: $lightblue-color;
+    color: $lightblue-color;
+  }
+}
+.header-right {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  &__svg {
+    gap: 30px;
+    padding-left: 50px;
+    width: 16px;
+    height: 14px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__contact {
+    color: $gray-color;
+    font-weight: $font-weight;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $gray-color;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__contact:hover,
+  &__contact:focus,
+  &__svg:hover,
+  &__svg:focus {
+    fill: $lightblue-color;
+    color: $lightblue-color;
+  }
+}

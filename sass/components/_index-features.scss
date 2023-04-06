@@ -1,0 +1,38 @@
+@import "../utils/vars";
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.features-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+  &__image {
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+  }
+  &__title {
+    display: flex;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $black-color;
+  }
+  &__description {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $gray-color;
+  }
+  &__svg {
+    transform: translate(97px, 24px);
+  }
+}
