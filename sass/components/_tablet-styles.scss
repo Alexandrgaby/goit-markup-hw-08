@@ -1,0 +1,139 @@
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    min-width: 768px;
+    margin: 0 auto;
+  }
+  .section {
+    padding: 60px 0;
+  }
+  .banner__title {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+  .activities__title {
+    font-size: 26px;
+    line-height: 1.17;
+  }
+  .staff-section__title {
+    font-size: 26px;
+    line-height: 1.17;
+  }
+  .customers-container__title {
+    font-size: 26px;
+    line-height: 1.17;
+  }
+  .backdrop {
+    &-container {
+      width: 450px;
+      height: 609px;
+    }
+    &__title {
+      width: 370px;
+      padding-left: 40px;
+    }
+  }
+
+  .terms {
+    font-size: 12px;
+    line-height: 1.21;
+    &__mark {
+      bottom: 118px;
+      left: 46px;
+    }
+  }
+
+  .page-header__container {
+    padding: 26px 15px;
+  }
+
+  .banner {
+    min-width: 768px;
+    margin: 0 auto;
+    background: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.2)),
+      url(/images/banner-img-T.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .features-list {
+    flex-wrap: wrap;
+    &__image {
+      flex-basis: calc((100% - 2 * 30px) / 2);
+    }
+  }
+  .activities {
+    display: none;
+  }
+  .staff-section {
+    min-width: 768px;
+  }
+  .staff-list {
+    flex-wrap: wrap;
+    &__card {
+      flex-basis: calc((100% - 2 * 30px) / 2);
+    }
+  }
+  .customers-container__list {
+    flex-wrap: wrap;
+  }
+  .customers-container__window {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+
+  .footer-page {
+    min-width: 768px;
+    &__tablet {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__logo {
+      text-align: center;
+    }
+    &__tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .adress-footer {
+    text-align: center;
+  }
+
+  .socials {
+    align-items: center;
+  }
+}
+.footer-form {
+  align-items: center;
+  &__title {
+    padding-top: 0;
+  }
+  &__input-window {
+    flex-direction: column;
+    align-items: center;
+  }
+  &__button {
+    width: 250px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    min-width: 768px;
+    margin: 0 auto;
+    background: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.2)),
+      url(/images/banner-img-T@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

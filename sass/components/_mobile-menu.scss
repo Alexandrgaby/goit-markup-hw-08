@@ -1,8 +1,79 @@
-.menu {
+.mobile-menu {
   display: flex;
-  padding: 0;
+  flex-direction: column;
+  gap: 32px;
+  position: absolute;
+  top: 48px;
+  left: 40px;
+
+  &__item {
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    line-height: 47px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $black-color;
+    &:hover,
+    &:focus {
+      color: $lightblue-color;
+    }
+  }
+}
+.mobile-contacts {
+  position: absolute;
+  bottom: 134px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  &__item {
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+  }
+  &__link {
+    text-decoration: none;
+    color: $lightblue-color;
+  }
+  &--item-modifier {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  &--link-modifier {
+    color: $gray-color;
+  }
+}
+
+.mobile-social-media {
+  position: absolute;
+  bottom: 48px;
+  left: 40px;
+  display: flex;
+  gap: 10px;
+
+  &__item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: $lightblue-color;
+  }
+}
+
+.mobile-close {
+  position: absolute;
   margin: 0;
-  list-style: none;
+  top: 21px;
+  right: 35px;
+  &__icon:hover use {
+    fill: $lightblue-color;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 767px) {
@@ -11,24 +82,12 @@
   }
 }
 
-.menu .link {
-  padding: 10px;
-  color: inherit;
-  text-decoration: none;
-}
-
-.menu .link:hover,
-.menu .link:focus {
-  text-decoration: underline;
-}
-
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -36,6 +95,11 @@
   border: none;
   border-radius: 50%;
   outline: none;
+  position: absolute;
+  right: 20px;
+  &:hover use {
+    fill: $lightblue-color;
+  }
 }
 
 @media (min-width: 768px) {
@@ -44,45 +108,19 @@
   }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .menu-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
+  background-color: $white-color;
   z-index: 999;
-
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: transform 250ms ease-in-out;
+  min-width: 480px;
 }
 
 .menu-container.is-open {
-  transform: translateX(0);
-}
-
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
-}
-
-.mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.mobile-menu .link {
-  display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
+  transform: translateY(0);
 }

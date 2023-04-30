@@ -9,7 +9,7 @@
       href="node_modules/modern-normalize/modern-normalize.css"
     />
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="sass/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -144,7 +144,7 @@
             </button>
           </div>
         </section>
-        <section class="container section features">
+        <section class="section features">
           <ul class="list-content features-list">
             <li>
               <div class="features-list__image">
@@ -216,15 +216,14 @@
             </li>
           </ul>
         </section>
-        <section class="section container activities">
+        <section class="section activities">
           <h2 class="activities__title">What we do</h2>
           <ul class="list-content activities__list">
             <li>
               <img
-                src="images/img1.jpg"
-                alt="Typing on keyboard"
-                width="370"
-                height="294"
+                srcset="images/whatwedo1.jpg 1x, images/whatwedo1@2x.jpg 2x"
+                src="images/whatwedo1.jpg"
+                alt="coding"
               />
               <div class="activities__container-text">
                 <h2 class="activities__description">Desktop Apps</h2>
@@ -232,10 +231,9 @@
             </li>
             <li>
               <img
-                src="images/img2.jpg"
+                srcset="images/whatwedo2.jpg 1x, images/whatwedo2@2x.jpg 2x"
+                src="images/whatwedo2.jpg"
                 alt="Searching on phone"
-                width="370"
-                height="294"
               />
               <div class="activities__container-text">
                 <h2 class="activities__description">Mobile APPS</h2>
@@ -243,10 +241,9 @@
             </li>
             <li>
               <img
-                src="images/img3.jpg"
-                alt="Working on Tablet"
-                width="370"
-                height="294"
+                srcset="images/whatwedo3.jpg 1x, images/whatwedo3@2x.jpg 2x"
+                src="images/whatwedo3.jpg"
+                alt="Working on mobile apps"
               />
               <div class="activities__container-text">
                 <h2 class="activities__description">DESIGN SOLUTIONS</h2>
@@ -258,12 +255,30 @@
           <h2 class="staff-section__title">Our Team</h2>
           <ul class="list-content staff-list">
             <li class="staff-list__card">
-              <img
-                src="images/staff1.jpg"
-                alt="Christopher Walker"
-                width="270"
-                height="260"
-              />
+              <!-- <source
+                  media="screen and (max-width: 767px)"
+                  srcset="
+                    images/team-member1-M.jpg    1x,
+                    images/team-member1-M@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and (min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    images/team-member1-T.jpg    1x,
+                    images/team-member1-T@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and (min-width: 1200px)"
+                  srcset="
+                    images/team-member1-D.jpg    1x,
+                    images/team-member1-D@2x.jpg 2x
+                  "
+                /> -->
+
+              <img src="images/team-member1-M.jpg" alt="Christopher Walker" />
+
               <h3 class="staff-list__name">Christopher Walker</h3>
               <p class="staff-list__occupation">Product Designer</p>
 
@@ -303,12 +318,32 @@
               </ul>
             </li>
             <li class="staff-list__card">
-              <img
-                src="images/staff2.jpg"
-                alt="Kylie Evans"
-                width="270"
-                height="260"
-              />
+              <!-- <picture>
+                <source
+                  media="screen and (max-width: 767px)"
+                  srcset="
+                    images/team-member2-M.jpg    1x,
+                    images/team-member2-M@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and (min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    images/team-member2-T.jpg    1x,
+                    images/team-member2-T@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and (min-width: 1200px)"
+                  srcset="
+                    images/team-member2-D.jpg    1x,
+                    images/team-member2-D@2x.jpg 2x
+                  "
+                /> -->
+
+              <img src="images/team-member2-M.jpg" alt="Kylie Evans" />
+              <!-- </picture> -->
+
               <h3 class="staff-list__name">Kylie Evans</h3>
               <p class="staff-list__occupation">Frontend Developer</p>
               <ul class="list-content icons-staff">
@@ -347,12 +382,32 @@
               </ul>
             </li>
             <li class="staff-list__card">
-              <img
-                src="images/staff3.jpg"
-                alt="Ryan Harris"
-                width="270"
-                height="260"
-              />
+              <!-- <picture>
+                <source
+                  media="screen and (max-width: 767px)"
+                  srcset="
+                    images/team-member3-M.jpg    1x,
+                    images/team-member3-M@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and (min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    images/team-member3-T.jpg    1x,
+                    images/team-member3-T@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and (min-width: 1200px)"
+                  srcset="
+                    images/team-member3-D.jpg    1x,
+                    images/team-member3-D@2x.jpg 2x
+                  "
+                /> -->
+
+              <img src="images/team-member3-M.jpg" alt="Ryan Harris" />
+              <!-- </picture> -->
+
               <h3 class="staff-list__name">Ryan Harris</h3>
               <p class="staff-list__occupation">Marketing</p>
               <ul class="list-content icons-staff">
@@ -391,12 +446,32 @@
               </ul>
             </li>
             <li class="staff-list__card">
-              <img
-                src="images/staff4.jpg"
-                alt="Tyler Moore"
-                width="270"
-                height="260"
-              />
+              <!-- <picture>
+                <source
+                  media="screen and (max-width: 767px)"
+                  srcset="
+                    images/team-member4-M.jpg    1x,
+                    images/team-member4-M@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and (min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    images/team-member4-T.jpg    1x,
+                    images/team-member4-T@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="screen and (min-width: 1200px)"
+                  srcset="
+                    images/team-member4-D.jpg    1x,
+                    images/team-member4-D@2x.jpg 2x
+                  "
+                /> -->
+
+              <img src="images/team-member4-M.jpg" alt="Tyler Moore" />
+              <!-- </picture> -->
+
               <h3 class="staff-list__name">Tyler Moore</h3>
               <p class="staff-list__occupation">UI Designer</p>
               <ul class="list-content icons-staff">
@@ -436,7 +511,7 @@
             </li>
           </ul>
         </section>
-        <section class="section container customers-container">
+        <section class="section customers-container">
           <h2 class="customers-container__title">Regular Customers</h2>
           <ul class="list-content customers-container__list">
             <li class="customers-container__window">
@@ -473,113 +548,143 @@
         </section>
       </main>
       <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
-          <svg
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            ></path>
+        <button class="menu-toggle js-close-menu mobile-close">
+          <svg width="19" height="19" class="mobile-close__icon">
+            <use href="./images/icons.svg.svg#icon-close"></use>
           </svg>
         </button>
-        <ul class="mobile-menu">
-          <li><a href="" class="link">About</a></li>
-          <li><a href="" class="link">Products</a></li>
-          <li><a href="" class="link">Contacts</a></li>
-          <li><a href="" class="link">Career</a></li>
+
+        <ul class="mobile-menu list-content">
+          <li class="mobile-menu__item">
+            <a href="index.html" class="mobile-menu__link">Studio</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Contacts</a>
+          </li>
+        </ul>
+        <ul class="mobile-contacts list-content">
+          <li class="mobile-contacts__item">
+            <a class="mobile-contacts__link" href="tel:+12127724150"
+              >+1 212-772-4150</a
+            >
+          </li>
+          <li class="mobile-contacts__item mobile-contacts--item-modifier">
+            <a
+              class="mobile-contacts__link mobile-contacts--link-modifier"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-social-media list-content">
+          <li class="mobile-social-media__item">
+            <a class="mobile-social-media__link" href="#">Instagram</a>
+          </li>
+          <li class="mobile-social-media__item">
+            <a class="mobile-social-media__link" href="#">Twitter</a>
+          </li>
+          <li class="mobile-social-media__item">
+            <a class="mobile-social-media__link" href="#">Facebook</a>
+          </li>
+          <li class="mobile-social-media__item">
+            <a class="mobile-social-media__link" href="#">LinkedIn</a>
+          </li>
         </ul>
       </div>
+
       <footer class="footer-page">
         <div class="footer-container">
-          <div class="footer-page__contacts">
-            <a class="footer-page__logo" href="index.html"
-              ><span class="footer-page__logo--modifier">Web</span>Studio</a
-            >
-            <address>
-              <ul class="list-content address-footer">
-                <li>
-                  <a
-                    class="address-footer__map"
-                    href="https://goo.gl/maps/83Axbr2DgfrndoFE7"
-                    ><p>Ave, NY 10065, USA</p></a
-                  >
+          <div class="footer-page__tablet">
+            <div class="footer-page__contacts">
+              <a class="footer-page__logo" href="index.html"
+                ><span class="footer-page__logo--modifier">Web</span>Studio</a
+              >
+              <address>
+                <ul class="list-content address-footer">
+                  <li>
+                    <a
+                      class="address-footer__map"
+                      href="https://goo.gl/maps/83Axbr2DgfrndoFE7"
+                      ><p>Ave, NY 10065, USA</p></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="address-footer__link"
+                      href="mailto:info@devstudio.com"
+                      ><p>info@devstudio.com</p></a
+                    >
+                  </li>
+                  <li>
+                    <a class="address-footer__link" href="tel:+1212-772-4150"
+                      ><p>+1 212-772-4150</p></a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="socials">
+              <h3 class="socials__title">Find Us On</h3>
+              <ul class="list-content social-icons">
+                <li class="social-icons__list">
+                  <a href="#"
+                    ><svg width="20px" height="20px" class="social-icons__svg">
+                      <use
+                        href="./images/icons-svg.svg#icon-instagram-2 "
+                      ></use></svg
+                  ></a>
                 </li>
-                <li>
-                  <a
-                    class="address-footer__link"
-                    href="mailto:info@devstudio.com"
-                    ><p>info@devstudio.com</p></a
-                  >
+                <li class="social-icons__list">
+                  <a href="#"
+                    ><svg width="20px" height="20px" class="social-icons__svg">
+                      <use
+                        href="./images/icons-svg.svg#icon-twitter "
+                      ></use></svg
+                  ></a>
                 </li>
-                <li>
-                  <a class="address-footer__link" href="tel:+1212-772-4150"
-                    ><p>+1 212-772-4150</p></a
-                  >
+                <li class="social-icons__list">
+                  <a href="#"
+                    ><svg width="20px" height="20px" class="social-icons__svg">
+                      <use
+                        href="./images/icons-svg.svg#icon-facebook-1 "
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="social-icons__list">
+                  <a href="#"
+                    ><svg width="20px" height="20px" class="social-icons__svg">
+                      <use
+                        href="./images/icons-svg.svg#icon-linkedin-1 "
+                      ></use></svg
+                  ></a>
                 </li>
               </ul>
-            </address>
+            </div>
           </div>
-          <div class="socials">
-            <h3 class="socials__title">Find Us On</h3>
-            <ul class="list-content social-icons">
-              <li class="social-icons__list">
-                <a href="#"
-                  ><svg width="20px" height="20px" class="social-icons__svg">
-                    <use
-                      href="./images/icons-svg.svg#icon-instagram-2 "
-                    ></use></svg
-                ></a>
-              </li>
-              <li class="social-icons__list">
-                <a href="#"
-                  ><svg width="20px" height="20px" class="social-icons__svg">
-                    <use href="./images/icons-svg.svg#icon-twitter "></use></svg
-                ></a>
-              </li>
-              <li class="social-icons__list">
-                <a href="#"
-                  ><svg width="20px" height="20px" class="social-icons__svg">
-                    <use
-                      href="./images/icons-svg.svg#icon-facebook-1 "
-                    ></use></svg
-                ></a>
-              </li>
-              <li class="social-icons__list">
-                <a href="#"
-                  ><svg width="20px" height="20px" class="social-icons__svg">
-                    <use
-                      href="./images/icons-svg.svg#icon-linkedin-1 "
-                    ></use></svg
-                ></a>
-              </li>
-            </ul>
-          </div>
+          <form name="subscribe-form" class="footer-form">
+            <label for="email-subscription" class="footer-form__title"
+              >Subscribe to the newsletter
+            </label>
+            <div class="footer-form__window">
+              <input
+                type="email"
+                placeholder="E-mail"
+                name="email-subscription"
+                class="footer-form__input"
+              />
+              <button type="submit" class="footer-form__button">
+                Subscribe
+                <svg width="24px" height="24px">
+                  <use href="./images/icons-svg.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
-        <form name="subscribe-form" class="footer-form">
-          <label for="email-subscription" class="footer-form__title"
-            >Subscribe to the newsletter
-          </label>
-          <div class="footer-form__window">
-            <input
-              type="email"
-              placeholder="E-mail"
-              name="email-subscription"
-              class="footer-form__input"
-            />
-            <button type="submit" class="footer-form__button">
-              Subscribe
-              <svg width="24px" height="24px">
-                <use href="./images/icons-svg.svg#icon-send"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
       </footer>
     </div>
     <script src="./js/mobile-menu.js"></script>
