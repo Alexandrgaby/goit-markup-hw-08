@@ -1,9 +1,11 @@
 @import "../utils/vars";
 .footer-container {
+  position: relative;
   display: flex;
   gap: 94px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 94px;
 }
 
 .footer-page {
@@ -23,10 +25,12 @@
     }
   }
   &__contacts {
+    position: absolute;
+    top: -10%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 .address-footer {
@@ -105,14 +109,13 @@
   &__title {
     position: absolute;
     left: 51%;
-    bottom: 167px;
+    bottom: 220px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
-    padding-top: 72px;
   }
   &__input {
     width: 358px;
@@ -145,8 +148,7 @@
 }
 .footer-form__window {
   position: absolute;
-  left: 51%;
-  bottom: 95px;
+  bottom: 80px;
   gap: 12px;
 }
 .footer-form__button {
@@ -171,6 +173,6 @@
   }
 }
 .newsletter-footer {
-  flex-direction: column;
+  display: flex;
   gap: 20px;
 }
