@@ -25,6 +25,7 @@ body {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  padding-bottom: 1%;
 }
 .hero-container__logo {
   width: 145px;
@@ -35,6 +36,7 @@ body {
   letter-spacing: 0.03em;
   color: #000;
   text-decoration: none;
+  padding-right: 3%;
 }
 .hero-container__logo-word {
   color: #2196f3;
@@ -241,7 +243,7 @@ body {
 .terms__checked {
   position: absolute;
   bottom: 104px;
-  left: 43px;
+  left: 57px;
 }
 .terms__button {
   display: flex;
@@ -351,13 +353,13 @@ body {
 .features {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 2px;
 }
 
 .features-list {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 2px;
   margin: 0 auto;
 }
 .features-list__image {
@@ -377,6 +379,7 @@ body {
 }
 .features-list__description {
   display: flex;
+  max-width: 50%;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -404,8 +407,8 @@ body {
 
 .icons-staff {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 .icons-staff__item {
@@ -578,10 +581,12 @@ body {
 }
 
 .footer-container {
+  position: relative;
   display: flex;
   gap: 94px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 94px;
 }
 
 .footer-page {
@@ -602,10 +607,12 @@ body {
   color: #2196f3;
 }
 .footer-page__contacts {
+  position: absolute;
+  top: -10%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .address-footer__map {
@@ -684,14 +691,13 @@ body {
 .footer-form__button__title {
   position: absolute;
   left: 51%;
-  bottom: 167px;
+  bottom: 220px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 72px;
 }
 .footer-form__input,
 .footer-form__window__input,
@@ -739,8 +745,7 @@ body {
 
 .footer-form__window {
   position: absolute;
-  left: 51%;
-  bottom: 95px;
+  bottom: 80px;
   gap: 12px;
 }
 
@@ -766,7 +771,7 @@ body {
 }
 
 .newsletter-footer {
-  flex-direction: column;
+  display: flex;
   gap: 20px;
 }
 

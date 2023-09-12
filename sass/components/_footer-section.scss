@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   gap: 94px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 94px;
 }
@@ -69,8 +69,16 @@
     }
   }
 }
-
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 120%;
+  bottom: 118%;
+}
 .socials__title {
+  position: relative;
+  right: 10%;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -106,10 +114,12 @@
 .footer-form__button {
   display: flex;
   position: relative;
+  left: 1%;
+  bottom: 90%;
   &__title {
-    position: absolute;
-    left: 51%;
-    bottom: 220px;
+    position: relative;
+    left: 28%;
+    bottom: 160%;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -147,9 +157,8 @@
   }
 }
 .footer-form__window {
-  position: absolute;
-  bottom: 80px;
-  gap: 12px;
+  position: relative;
+  bottom: px;
 }
 .footer-form__button {
   background: $lightblue-color;
@@ -174,5 +183,4 @@
 }
 .newsletter-footer {
   display: flex;
-  gap: 20px;
 }

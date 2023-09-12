@@ -1,14 +1,14 @@
 @import "../utils/vars";
 .features {
   display: flex;
-  flex-direction: column;
   gap: 2px;
 }
 .features-list {
   display: flex;
+  width: 77%;
   justify-content: center;
-  gap: 2px;
   margin: 0 auto;
+
   &__image {
     width: 270px;
     height: 120px;

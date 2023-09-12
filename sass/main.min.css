@@ -241,9 +241,8 @@ body {
   display: none;
 }
 .terms__checked {
-  position: absolute;
-  bottom: 104px;
-  left: 43px;
+  position: relative;
+  left: -5%;
 }
 .terms__button {
   display: flex;
@@ -352,14 +351,13 @@ body {
 
 .features {
   display: flex;
-  flex-direction: column;
   gap: 2px;
 }
 
 .features-list {
   display: flex;
+  width: 77%;
   justify-content: center;
-  gap: 2px;
   margin: 0 auto;
 }
 .features-list__image {
@@ -584,7 +582,7 @@ body {
   position: relative;
   display: flex;
   gap: 94px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 94px;
 }
@@ -649,7 +647,17 @@ body {
   color: #2196f3;
 }
 
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 120%;
+  bottom: 118%;
+}
+
 .socials__title {
+  position: relative;
+  right: 10%;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -685,13 +693,15 @@ body {
 .footer-form__button {
   display: flex;
   position: relative;
+  left: 1%;
+  bottom: 90%;
 }
 .footer-form__title,
 .footer-form__window__title,
 .footer-form__button__title {
-  position: absolute;
-  left: 51%;
-  bottom: 220px;
+  position: relative;
+  left: 28%;
+  bottom: 160%;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -744,9 +754,8 @@ body {
 }
 
 .footer-form__window {
-  position: absolute;
-  bottom: 80px;
-  gap: 12px;
+  position: relative;
+  bottom: px;
 }
 
 .footer-form__button {
@@ -772,7 +781,6 @@ body {
 
 .newsletter-footer {
   display: flex;
-  gap: 20px;
 }
 
 .mobile-menu {
