@@ -1,6 +1,6 @@
-@media screen and (min-width: 300px) and (max-width: 767px) {
+@media screen and (min-width: 200px) and (max-width: 767px) {
   .container {
-    min-width: 480px;
+    min-width: 240px;
     margin: 0 auto;
   }
   .section {
@@ -47,7 +47,7 @@
   }
 
   .banner {
-    min-width: 480px;
+    min-width: 240px;
     margin: 0 auto;
     background: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.2)),
       url(/images/banner-img-M.jpg);
@@ -139,11 +139,11 @@
     }
   }
 
-  @media screen and (min-width: 300px) and (min-device-pixel-ratio: 2),
-    screen and (min-width: 300px) and (min-resolution: 192dpi),
-    screen and (min-width: 300px) and (min-resolution: 2dppx) {
+  @media screen and (min-width: 200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 200px) and (min-resolution: 192dpi),
+    screen and (min-width: 200px) and (min-resolution: 2dppx) {
     .banner__main {
-      min-width: 300px;
+      min-width: 200px;
       margin: 0 auto;
       background: linear-gradient(rgba(47, 48, 58, 0.7), rgba(47, 48, 58, 0.2)),
         url(/images/banner-img-M@2x.jpg);
