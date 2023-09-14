@@ -240,7 +240,7 @@ body {
 }
 .terms__button {
   display: flex;
-  flex: 0 0 50%;
+  flex: 0 0 10%;
   position: absolute;
   bottom: 37px;
   align-self: center;
@@ -925,11 +925,13 @@ body {
     line-height: 1.17;
   }
   .backdrop-container {
-    width: 450px;
-    height: 609px;
+    position: absolute;
+    top: 60%;
+    width: 60%;
+    height: 700px;
   }
   .backdrop__title {
-    width: 370px;
+    width: 60%;
     padding-left: 40px;
   }
   .terms {
@@ -937,7 +939,7 @@ body {
     line-height: 1.21;
   }
   .terms__mark {
-    bottom: 118px;
+    bottom: 20px;
     left: 46px;
   }
   .page-header__container {

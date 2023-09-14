@@ -24,11 +24,13 @@
   }
   .backdrop {
     &-container {
-      width: 450px;
-      height: 609px;
+      position: absolute;
+      top: 60%;
+      width: 60%;
+      height: 700px;
     }
     &__title {
-      width: 370px;
+      width: 60%;
       padding-left: 40px;
     }
   }
@@ -37,7 +39,7 @@
     font-size: 12px;
     line-height: 1.21;
     &__mark {
-      bottom: 118px;
+      bottom: 20px;
       left: 46px;
     }
   }
