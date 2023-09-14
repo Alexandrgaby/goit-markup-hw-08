@@ -901,10 +901,6 @@ body {
 }
 
 @media screen and (min-width: 200px) and (max-width: 767px) {
-  .container {
-    min-width: 240px;
-    margin: 0 auto;
-  }
   .section {
     padding: 60px 0;
   }
@@ -927,7 +923,7 @@ body {
   .backdrop-container {
     position: absolute;
     top: 60%;
-    width: 60%;
+    width: 80%;
     height: 700px;
   }
   .backdrop__title {
