@@ -968,14 +968,18 @@ body {
     display: none;
   }
   .staff-section {
-    min-width: 480px;
+    min-width: 300px;
   }
   .staff-list {
     flex-direction: column;
+    width: 60%;
   }
   .staff-list__item {
-    max-width: 450px;
+    max-width: 340px;
     margin: 0 auto;
+  }
+  .staff-list__image {
+    width: 100%;
   }
   .customers-container__list {
     flex-wrap: wrap;
