@@ -98,7 +98,7 @@
   }
 
   .footer-page {
-    min-width: 480px;
+    min-width: 300px;
 
     &__logo {
       text-align: center;
@@ -114,6 +114,7 @@
     align-items: center;
     justify-content: center;
     gap: 60px;
+    margin: 0 auto;
   }
 
   .adress-footer {
@@ -122,26 +123,36 @@
   }
 
   .socials {
+    position: relative;
+    left: 1px;
     &__title {
-      text-align: center;
-      padding-top: 0;
     }
   }
+  .social-icons {
+  }
   .footer-form {
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
     &__title {
-      padding-top: 0;
-      text-align: center;
+      position: relative;
+      left: 1px;
+      bottom: 40px;
     }
     &__input {
+      display: flex;
+      position: relative;
+      left: 100px;
       width: 450px;
     }
     &__input-window {
-      flex-direction: column;
-      align-items: center;
+      display: inline;
     }
     &__button {
+      position: relative;
+      top: 100px;
+      left: 200px;
       width: 250px;
-      margin-bottom: 60px;
     }
   }
 
