@@ -1026,17 +1026,17 @@ body {
   .footer-form__input {
     display: flex;
     position: relative;
-    left: 100px;
-    width: 450px;
+    left: 10px;
+    width: 300px;
   }
   .footer-form__input-window {
-    display: inline;
+    display: flex;
   }
   .footer-form__button {
-    position: relative;
-    top: 100px;
-    left: 200px;
-    width: 250px;
+    position: absolute;
+    top: 140%;
+    left: 19%;
+    width: 240px;
   }
 }
 @media screen and (min-width: 200px) and (max-width: 767px) and (min-width: 200px) and (min-device-pixel-ratio: 2), screen and (min-width: 200px) and (max-width: 767px) and (min-width: 200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 200px) and (max-width: 767px) and (min-width: 200px) and (min-resolution: 192dpi), screen and (min-width: 200px) and (max-width: 767px) and (min-width: 200px) and (min-resolution: 2dppx) {
